@@ -17,13 +17,13 @@ from yt_dlp import YoutubeDL
 from config import HNDLR
 
 
-@Client.on_message(filters.command(["بحث", "تحميل"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["تنزيل", "تحميل"], prefixes=f"{HNDLR}"))
 async def song(client, message: Message):
     urlissed = get_text(message)
     if not urlissed:
         await client.send_message(
             message.chat.id,
-            "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️.",
+            "-› يرجى اعطاء اسم الاغنية او راجع لللاوامر لمعرفة استخدامي ⚡️.",
         )
         return
     pablo = await client.send_message(
@@ -242,7 +242,7 @@ async def vsong(client, message: Message):
     )
     if not urlissed:
         await pablo.edit(
-            "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+            "-› يرجى اعطاء اسم الاغنية او راجع للاوامر لمعرفة استخدامي ⚡️."
         )
         return
 
