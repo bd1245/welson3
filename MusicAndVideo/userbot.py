@@ -67,7 +67,7 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>اهلا بك صديقي  🥇 {m.from_user.mention}!
+<b>منور يزميلي  🥇 {m.from_user.mention}!
 
 🛠 𝑾𝑬𝑳𝑺𝑶𝑵 𝑺𝑶𝑼𝑹𝑪𝑬
 
