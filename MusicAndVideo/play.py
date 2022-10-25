@@ -371,7 +371,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "الصوت", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/9fd0a28073d92e3052fe3.jpg",
+                        photo="https://telegra.ph/file/4d5d8cb3347b011b28eb6.jpg",
                         caption=f"""
 **تمت اضافتها الى قائمة الانتظار {chat}
 الاسم: [{songname}]({link})
