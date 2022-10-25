@@ -63,7 +63,7 @@ async def restart(client, m: Message):
     quit()
 
 
-@Client.on_message(filters.command(["الاوامر"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["الاوامر","اوامر"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
