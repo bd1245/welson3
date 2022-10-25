@@ -101,3 +101,20 @@ async def help(client, m: Message):
 
 قناة السورس:  @kyany_el5as"""
     await m.reply(HELP)
+@Client.on_message(filters.command(["الريبو"], prefixes=f"{HNDLR}"))
+
+async def repo(client, m: Message):
+
+    await m.delete()
+
+    REPO = f"""
+
+<b>👋  اهلا {m.from_user.mention}!
+
+- للمطور : @WELS0N 
+
+@kyany_el5as 
+
+"""
+
+    await m.reply(REPO, disable_web_page_preview=True)
