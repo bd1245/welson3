@@ -125,7 +125,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/9fd0a28073d92e3052fe3.jpg",
+                    photo="https://telegra.ph/file/4d5d8cb3347b011b28eb6.jpg",
                     caption=f"""
 تمت اضافتها الى قائمة الانتظار {pos}
 الاسم: [{songname}]({link})
@@ -145,7 +145,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/9fd0a28073d92e3052fe3.jpg",
+                    photo="https://telegra.ph/file/4d5d8cb3347b011b28eb6.jpg",
                     caption=f"""
 الحالة: تم التشغيل بنجاح ⚡️
 الاسم: [{songname}]({link})
@@ -244,7 +244,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/9fd0a28073d92e3052fe3.jpg",
+                    photo="https://telegra.ph/file/4d5d8cb3347b011b28eb6.jpg",
                     caption=f"""
 **تمت اضافتها الى قائمة الانتظار{pos}
 الاسم: [{songname}]({link})
@@ -268,7 +268,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/9fd0a28073d92e3052fe3.jpg",
+                    photo="https://telegra.ph/file/4d5d8cb3347b011b28eb6.jpg",
                     caption=f"""
 **الحالة: تم التشغيل بنجاح ⚡️
 الاسم: [{songname}]({link})
