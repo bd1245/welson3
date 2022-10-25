@@ -102,7 +102,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["تشغيل"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["تشغيل","شغل"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -157,7 +157,7 @@ async def play(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "-› يرجى اعطاء اسم الاغنية او راجع زر الاوامر لمعرفة استخدامي ⚡️."
+                "-› يرجى اعطاء اسم الاغنية او راجع للاوامر لمعرفة استخدامي ⚡️."
             )
         else:
             await m.delete()
@@ -211,7 +211,7 @@ async def play(client, m: Message):
                             await huehue.edit(f"`{ep}`")
 
 
-@Client.on_message(filters.command(["فيديو"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["فيديو","فيد"], prefixes=f"{HNDLR}"))
 async def vplay(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -280,7 +280,7 @@ async def vplay(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "**-› يرجى اعطاء اسم فيديو او راجع زر الاوامر لمعرفة استخدامي ⚡️.**"
+                "**-› يرجى اعطاء اسم فيديو او راجع للاوامر لمعرفة استخدامي ⚡️.**"
             )
         else:
             await m.delete()
